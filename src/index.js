@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import HomePage from './component/HomePage';
 
 ReactDom.render(
-  <div>Hello World!</div>, document.getElementById('app')
+  <HomePage />, document.getElementById('app')
 );
