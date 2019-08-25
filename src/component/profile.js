@@ -16,23 +16,25 @@ const styles = {
   },
   author: {
     marginLeft: 20,
-    fontSize: 22,
+    fontSize: 25,
     marginTop: 45,
     float: 'left'
 
   },
   paper: {
-    marginLeft: '20px',
+    marginLeft: '50px',
     width: '15%',
-    height: '220px'
+    height: '250px'
   },
   article: {
     float: 'left',
-    marginTop: 30,
-    marginLeft: 40
+    marginTop: 40,
+    marginLeft: 40,
+    fontSize: 19
   },
   article_num: {
-    marginLeft: 48
+    marginLeft: 50,
+    fontSize: 18
   }
 }
 
