@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
+import Profile from './Profile';
 
 const style = {
   back_pic: {
@@ -25,6 +25,7 @@ export default class HomePage extends React.Component {
         <div style={style.title}>
           闫某某的博客
         </div>
+        <Profile />
       </div>
     )
   }
