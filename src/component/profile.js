@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
+import { connect } from 'react-redux';
 
 const styles = {
   div: {
@@ -38,7 +39,7 @@ const styles = {
   }
 }
 
-export default class Profile extends React.Component {
+class Profile extends React.Component {
   render() {
     return (
       <div>
@@ -49,10 +50,18 @@ export default class Profile extends React.Component {
           </div>
           <div style={styles.div}>
             <span style={styles.article}>{'文章'}</span>
-            <div style={styles.article_num}>{'20'}</div>
+            <div style={styles.article_num}>{this.props.article_num}</div>
           </div>
         </Paper>
       </div>
     )
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    article_num: state.article_num
+  }
+}
+
+export default connect(mapStateToProps)(Profile);
