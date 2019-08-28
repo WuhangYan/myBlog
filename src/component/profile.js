@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
 import { connect } from 'react-redux';
+import image from '../img/avatar.jpg';
 
 const styles = {
   div: {
@@ -45,7 +46,7 @@ class Profile extends React.Component {
       <div>
         <Paper style={styles.paper}>
           <div style={styles.div}>
-            <Avatar style={styles.avatar} src='http://s13.sinaimg.cn/orignal/4a30d769hcf283d4da12c' />
+            <Avatar style={styles.avatar} src={image} />
             <span style={styles.author}>{'闫某某'}</span>
           </div>
           <div style={styles.div}>

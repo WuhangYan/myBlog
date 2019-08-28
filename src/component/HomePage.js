@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Profile from './Profile';
+import image from '../img/background.jpg';
 
 const style = {
   back_pic: {
-    backgroundImage: 'url(https://c-ssl.duitang.com/uploads/item/201610/17/20161017162712_vPkxK.jpeg)',
+    backgroundImage: 'url(' + image + ')',
     height: '100%',
     width: '100%',
     backgroundRepeat: 'no-repeat',
