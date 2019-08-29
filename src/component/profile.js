@@ -26,7 +26,8 @@ const styles = {
   paper: {
     marginLeft: '50px',
     width: '15%',
-    height: '250px'
+    height: '250px',
+    float: 'left'
   },
   article: {
     float: 'left',
@@ -43,7 +44,7 @@ const styles = {
 class Profile extends React.Component {
   render() {
     return (
-      <div>
+
         <Paper style={styles.paper}>
           <div style={styles.div}>
             <Avatar style={styles.avatar} src={image} />
@@ -54,7 +55,7 @@ class Profile extends React.Component {
             <div style={styles.article_num}>{this.props.article_num}</div>
           </div>
         </Paper>
-      </div>
+
     )
   }
 }
