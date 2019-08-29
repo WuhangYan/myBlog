@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Profile from './Profile';
 import image from '../img/background.jpg';
+import ArticleList from './ArticleList';
 
 const style = {
   back_pic: {
@@ -27,6 +28,7 @@ export default class HomePage extends React.Component {
           闫某某的博客
         </div>
         <Profile />
+        <ArticleList />
       </div>
     )
   }
